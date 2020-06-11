@@ -1,0 +1,40 @@
+Declare,metatab-latest
+Title,San Diego Police Calls for Service
+Description,"San Diego Police Calls for Service, linked to related datasets"
+Identifier,dfdbf294-6e41-4717-87d1-2ff400218b2c
+Name,sandiego.gov-police_calls_for_service-1.1.1
+Dataset,police_calls_for_service
+Origin,sandiego.gov
+Time,
+Space,
+Grain,
+Variant,
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2020-06-11T21:41:09
+Modified,2020-06-11T21:41:10
+Giturl,https://github.com/metatab-packages/policedata-collection.git
+
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+Documentation,http://seshat.datasd.org/pd/pd_cfs_priority_defs_datasd.pdf ,Priority codes
+
+Section,References,Name,Description,
+Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2015_datasd_v1.csv,calls_for_service_source_2015,"San Diego Police Calls for Service, 2015"
+Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2016_datasd_v1.csv,calls_for_service_source_2016,"San Diego Police Calls for Service, 2016"
+Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2017_datasd_v1.csv,calls_for_service_source_2017,"San Diego Police Calls for Service, 2017"
+Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2018_datasd.csv,calls_for_service_source_2018,"San Diego Police Calls for Service, 2018"
+Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2019_datasd.csv,calls_for_service_source_2019,"San Diego Police Calls for Service, 2019"
+Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2020_datasd.csv,calls_for_service_source_2020,"San Diego Police Calls for Service, 2020"
+Reference,http://seshat.datasd.org/pd/pd_dispo_codes_historical_datasd.csv,disp_codes_2017,"Disposition Codes, prior to October 17, 2017"
+Reference,http://seshat.datasd.org/pd/pd_dispo_codes_datasd.csv,disp_codes,Current disposition codes
+Reference,http://seshat.datasd.org/pd/pd_beat_neighborhoods_datasd.csv ,beat_codes,Beat Neighborhood Codes
+
+Section,Resources,Name,Description,
+
+Section,Schema,DataType,AltName,Description
