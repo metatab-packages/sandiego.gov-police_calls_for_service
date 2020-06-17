@@ -14,16 +14,16 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2020-06-11T21:41:09
-Modified,2020-06-12T23:44:12
+Modified,2020-06-15T17:22:09
 Giturl,https://github.com/metatab-packages/policedata-collection.git
-
+""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-
+""
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
 Documentation,http://seshat.datasd.org/pd/pd_cfs_priority_defs_datasd.pdf,Priority codes,,
-
+""
 Section,References,Name,Description,
 Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2015_datasd_v1.csv,calls_for_service_source_2015,"San Diego Police Calls for Service, 2015",
 Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2016_datasd_v1.csv,calls_for_service_source_2016,"San Diego Police Calls for Service, 2016",
@@ -34,12 +34,15 @@ Reference,http://seshat.datasd.org/pd/pd_calls_for_service_2020_datasd.csv,calls
 Reference,http://seshat.datasd.org/pd/pd_dispo_codes_historical_datasd.csv,disp_codes_2017,"Disposition Codes, prior to October 17, 2017",
 Reference,http://seshat.datasd.org/pd/pd_dispo_codes_datasd.csv,disp_codes,Current disposition codes,
 Reference,http://seshat.datasd.org/pd/pd_beat_neighborhoods_datasd.csv,beat_codes,Beat Neighborhood Codes,
-
+Reference,http://seshat.datasd.org/pd/pd_cfs_calltypes_datasd.csv,call_type_codes,Call type codes,
+""
 Section,Resources,Name,Description,
 Datafile,notebooks/Combine.ipynb#disp,sdpd_calls_dispositions,"San Diego Police Calls for Service, 2015 to 2020",
 Datafile,notebooks/Combine.ipynb#beats,sdpd_beats,San Diego Police beats,
+Datafile,notebooks/Combine.ipynb#call_types,sdpd_call_type,San Diego Police call type codes,
 Datafile,notebooks/Combine.ipynb#df,sdpd_calls_for_service,"San Diego Police Calls for Service, 2015 to 2020",
-
+Datafile,data/ct_map.csv,ct_map,Map from call type descriptions to simpler call types.,
+""
 Section,Schema,DataType,AltName,Description,Has_Codes
 Table,sdpd_calls_dispositions,,,,
 Table.Column,disposition,string,,,
@@ -62,3 +65,9 @@ Table.Column,call_type,string,,,
 Table.Column,disposition,string,,,
 Table.Column,beat,string,,,
 Table.Column,priority,integer,,,
+Table,sdpd_call_type,,,,
+Table.Column,call_type,string,,,
+Table.Column,description,string,,,
+Table,ct_map,,,,
+Table.Column,call_type_desc,string,,,
+Table.Column,simple_ct,string,,,
